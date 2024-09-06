@@ -1,5 +1,5 @@
 {
-  "address": "Anzm9rXES6eDPSuvi73NeN26oTVvuGyymAtw7JfexfHi",
+  "address": "DS2cmctnRwCtvMqkyXkZFDG4avg367h6zAGoVKgurw8b",
   "metadata": {
     "name": "forecast_market",
     "version": "0.1.0",
@@ -773,11 +773,7 @@
           "writable": true
         },
         {
-          "name": "market_account",
-          "writable": true
-        },
-        {
-          "name": "vault_token_account",
+          "name": "bet_mint",
           "writable": true
         },
         {
@@ -789,6 +785,14 @@
           "writable": true
         },
         {
+          "name": "market_account",
+          "writable": true
+        },
+        {
+          "name": "vault_token_account",
+          "writable": true
+        },
+        {
           "name": "answer_account",
           "writable": true
         },
@@ -797,7 +801,7 @@
           "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
         },
         {
-          "name": "associate_token_program",
+          "name": "associated_token_program",
           "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
         },
         {
@@ -1162,11 +1166,16 @@
     },
     {
       "code": 6015,
-      "name": "InvalidTimeRange",
+      "name": "InvalidAnswerKey",
       "msg": "Market/ClaimToken: Invalid time range"
     },
     {
       "code": 6016,
+      "name": "InvalidTimeRange",
+      "msg": "Market/ClaimToken: Invalid answer key"
+    },
+    {
+      "code": 6017,
       "name": "Overflow",
       "msg": "Operation Error: Overflow"
     }

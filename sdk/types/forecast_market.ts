@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/forecast_market.json`.
  */
 export type ForecastMarket = {
-  "address": "Anzm9rXES6eDPSuvi73NeN26oTVvuGyymAtw7JfexfHi",
+  "address": "DS2cmctnRwCtvMqkyXkZFDG4avg367h6zAGoVKgurw8b",
   "metadata": {
     "name": "forecastMarket",
     "version": "0.1.0",
@@ -779,11 +779,7 @@ export type ForecastMarket = {
           "writable": true
         },
         {
-          "name": "marketAccount",
-          "writable": true
-        },
-        {
-          "name": "vaultTokenAccount",
+          "name": "betMint",
           "writable": true
         },
         {
@@ -795,6 +791,14 @@ export type ForecastMarket = {
           "writable": true
         },
         {
+          "name": "marketAccount",
+          "writable": true
+        },
+        {
+          "name": "vaultTokenAccount",
+          "writable": true
+        },
+        {
           "name": "answerAccount",
           "writable": true
         },
@@ -803,7 +807,7 @@ export type ForecastMarket = {
           "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
         },
         {
-          "name": "associateTokenProgram",
+          "name": "associatedTokenProgram",
           "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
         },
         {
@@ -1168,11 +1172,16 @@ export type ForecastMarket = {
     },
     {
       "code": 6015,
-      "name": "invalidTimeRange",
+      "name": "invalidAnswerKey",
       "msg": "Market/ClaimToken: Invalid time range"
     },
     {
       "code": 6016,
+      "name": "invalidTimeRange",
+      "msg": "Market/ClaimToken: Invalid answer key"
+    },
+    {
+      "code": 6017,
       "name": "overflow",
       "msg": "Operation Error: Overflow"
     }
