@@ -24,7 +24,7 @@ Polyquest, Solana’s first SPL-based custom token-integrated prediction platfor
 ### Main contract:
 
 - WormholeGateway contract on the EVM chain
-- polyquest_program in solana ( [Github](https://github.com/polyquest-solana/polyquest-program) )
+- polyquest_program in solana ( [Github](https://github.com/polyquest-solana/polyquest-solana-program) )
 
 ### System flow
 ![Bet](./img/cross_chain_system_flow.svg)

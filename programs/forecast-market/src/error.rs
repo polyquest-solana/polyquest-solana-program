@@ -33,7 +33,15 @@ pub enum ProgramErrorCode {
     #[msg("Market/Bet: Invalid bet mint")]
     InvalidBetMint,
     #[msg("Market/ClaimToken: Invalid time range")]
+    InvalidAnswerKey,
+    #[msg("Market/ClaimToken: Invalid answer key")]
     InvalidTimeRange,
     #[msg("Operation Error: Overflow")]
     Overflow,
+    #[msg("Invalid reward mint")]
+    InvalidRewardMint,
+    #[msg("Invalid foreign emitter")]
+    InvalidForeignEmitter,
+    #[msg("Invalid message")]
+    InvalidMessage,
 }

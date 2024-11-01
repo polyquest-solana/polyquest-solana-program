@@ -26,4 +26,32 @@ pub enum ProgramErrorCode {
     CannotClaimToken,
     #[msg("Market/Receive: Answer key is not succeeded answer key")]
     AnswerKeyNotRight,
+    #[msg("Invalid token bridge config")]
+    InvalidTokenBridgeConfig,
+    #[msg("Invalid token bridge authority signer")]
+    InvalidTokenBridgeAuthoritySigner,
+    #[msg("Invalid token bridge sequence")]
+    InvalidTokenBridgeSequence,
+    #[msg("Invalid token bridge wormhole bridge")]
+    InvalidWormholeBridge,
+    #[msg("Invalid token bridge wormhole fee collector")]
+    InvalidWormholeFeeCollector,
+    #[msg("Invalid token bridge wrapped mint")]
+    InvalidTokenBridgeWrappedMint,
+    #[msg("Invalid message")]
+    InvalidMessage,
+    #[msg("Invalid foreign emitter")]
+    InvalidForeignEmitter,
+    #[msg("Invalid token bridge emitter")]
+    InvalidTokenBridgeEmitter,
+    #[msg("Zero bridge amount")]
+    ZeroBridgeAmount,
+    #[msg("Invalid recipient")]
+    InvalidRecipient,
+    #[msg("Invalid relayer fee")]
+    InvalidRelayerFee,
+    #[msg("Invalid token bridge custody signer")]
+    InvalidTokenBridgeCustodySigner,
+    #[msg("Invalid foreign contract")]
+    InvalidForeignContract
 }

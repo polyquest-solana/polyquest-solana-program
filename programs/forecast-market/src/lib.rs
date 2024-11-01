@@ -10,7 +10,9 @@ use instructions::*;
 
 use states::*;
 
-declare_id!("Anzm9rXES6eDPSuvi73NeN26oTVvuGyymAtw7JfexfHi");
+pub mod message;
+
+declare_id!("BnLvewVypHmGtRxjA9VpgtGjRy53shQ6ivzEw72GeiW9");
 
 #[program]
 pub mod forecast_market {
@@ -25,10 +27,7 @@ pub mod forecast_market {
         Ok(())
     }
 
-    pub fn update_owner(
-        ctx: Context<UpdateOwner>,
-        new_owner: Pubkey,
-    ) -> Result<()> {
+    pub fn update_owner(ctx: Context<UpdateOwner>, new_owner: Pubkey) -> Result<()> {
         instructions::update_owner(ctx, new_owner)?;
         Ok(())
     }
@@ -106,7 +105,11 @@ pub mod forecast_market {
         instructions::bet(ctx, anwser_key, amount)?;
         Ok(())
     }
-
+    pub fn bet_cross_chain(ctx: Context<BetCrossChain>, answer_key: u64, vaa_hash: [u8; 32]) -> Result<()> {
+        instructions::bet_cross_chain(ctx, answer_key, vaa_hash)?;
+        Ok(())
+    }
+    
     pub fn claim_token(ctx: Context<ClaimToken>) -> Result<()> {
         instructions::claim_token(ctx)?;
         Ok(())
